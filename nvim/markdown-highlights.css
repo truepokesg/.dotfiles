@@ -1,0 +1,112 @@
+/* === Solarized Dark for Prism.js (markdown-preview.nvim) === */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #839496 !important;
+  background: #002b36 !important;
+  font-family: "Fira Code", Consolas, monospace;
+  text-shadow: none !important;
+}
+
+/* Code block container */
+pre[class*="language-"] {
+  padding: 1rem !important;
+  margin: 0.5rem 0 !important;
+  overflow: auto !important;
+  border-radius: 6px !important;
+  background: #002b36 !important;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: 0.2em 0.3em !important;
+  border-radius: 4px !important;
+  background: #073642 !important;
+}
+
+/* Comments / docs */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #586e75 !important;
+  font-style: italic;
+}
+
+/* Strings */
+.token.string,
+.token.char {
+  color: #2aa198 !important;
+}
+
+/* Keywords */
+.token.keyword,
+.token.atrule {
+  color: #859900 !important;
+  font-weight: bold;
+}
+
+/* Functions */
+.token.function {
+  color: #b58900 !important;
+}
+
+/* Numbers, constants */
+.token.number,
+.token.constant,
+.token.symbol {
+  color: #d33682 !important;
+}
+
+/* Operators */
+.token.operator {
+  color: #839496 !important;
+}
+
+/* Variables */
+.token.variable {
+  color: #268bd2 !important;
+}
+
+/* Builtins */
+.token.builtin {
+  color: #6c71c4 !important;
+}
+
+/* Punctuation */
+.token.punctuation {
+  color: #93a1a1 !important;
+}
+
+/* Boolean / important keywords */
+.token.boolean {
+  color: #cb4b16 !important;
+}
+
+/* Class names / types */
+.token.class-name,
+.token.type {
+  color: #b58900 !important;
+  font-weight: bold;
+}
+
+/* Property names */
+.token.property {
+  color: #268bd2 !important;
+}
+
+/* Regex */
+.token.regex {
+  color: #dc322f !important;
+}
+
+/* Deleted / Inserted (diff) */
+.token.deleted {
+  color: #dc322f !important;
+  background: rgba(220, 50, 47, 0.15) !important;
+}
+.token.inserted {
+  color: #859900 !important;
+  background: rgba(133, 153, 0, 0.15) !important;
+}
+

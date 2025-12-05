@@ -1,0 +1,160 @@
+/* === Solarized Dark Full-Page Theme for markdown-preview.nvim === */
+
+/* Solarized palette */
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+}
+
+/* === PAGE BASE === */
+body {
+    background: var(--base03) !important;
+    color: var(--base0) !important;
+    font-family: "Inter", sans-serif !important;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+/* === HEADINGS === */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--blue) !important;
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+}
+
+h1 {
+    border-bottom: 2px solid var(--base02);
+    padding-bottom: 0.3em;
+}
+h2 {
+    border-bottom: 1px solid var(--base02);
+    padding-bottom: 0.2em;
+}
+
+/* === LINKS === */
+
+a {
+    color: var(--cyan) !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--blue) !important;
+    text-decoration: underline;
+}
+
+/* === PARAGRAPHS === */
+p {
+    margin: 1em 0;
+}
+
+/* === LISTS === */
+ul,
+ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+/* === BLOCKQUOTES === */
+blockquote {
+    border-left: 4px solid var(--yellow);
+    padding-left: 1em;
+    margin-left: 0;
+    color: var(--base1);
+    background: var(--base02);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/* === TABLES === */
+table {
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid var(--base02);
+    padding: 0.5em 1em;
+}
+
+th {
+    background: var(--base02);
+    color: var(--base1);
+}
+
+tr:nth-child(even) {
+    background: var(--base02);
+}
+
+/* === INLINE CODE === */
+code {
+    background: var(--base02) !important;
+    color: var(--cyan) !important;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: "Fira Code", monospace !important;
+}
+
+/* === CODE BLOCKS === */
+pre,
+pre code {
+    background: var(--base02) !important;
+    color: var(--base0) !important;
+    border-radius: 6px;
+    padding: 1em !important;
+    overflow: auto;
+}
+
+/* Fix nested code colors */
+pre code {
+    background: transparent !important;
+}
+
+/* === HORIZONTAL RULE === */
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--base02);
+    margin: 2em 0;
+}
+
+/* === IMAGES === */
+img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+/* === STRONG / EMPHASIS === */
+strong {
+    color: var(--yellow) !important;
+}
+
+em {
+    color: var(--magenta) !important;
+}
+
+/* === TASK LISTS === */
+input[type="checkbox"] {
+    accent-color: var(--cyan);
+}
