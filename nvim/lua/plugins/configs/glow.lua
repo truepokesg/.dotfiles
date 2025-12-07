@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup()
-    require("oil").setup()
+    require("glow").setup()
 end
 
 return M
