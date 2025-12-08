@@ -19,62 +19,13 @@ require("core")
 --  User Interface Modules
 -----------------------------------------------------------
 require("ui.dashboard")
-require("ui.theme").load("sayel-night")
-require("ui.preview").setup()
+require("ui").load("sayel-night")
+--require("ui.theme").load("sayel-night")
+--require("ui.preview").setup()
 
 -----------------------------------------------------------
 --  Plugins (loaded after core)
 -----------------------------------------------------------
-
-local p = require("ui.themes.sayel-night.colours").palette
-
-vim.api.nvim_set_hl(0, "RenderMarkdownBold", { fg = p.fg, bold = true })
-vim.api.nvim_set_hl(0, "RenderMarkdownItalic", { fg = p.fg, italic = true })
-vim.api.nvim_set_hl(0, "RenderMarkdownBoldItalic", { fg = p.fg, bold = true, italic = true })
-
--- treesitter inline markdown groups
-vim.api.nvim_set_hl(0, "@markup.strong.markdown_inline", { fg = p.fg, bold = true })
-vim.api.nvim_set_hl(0, "@markup.emphasis.markdown_inline", { fg = p.fg, italic = true })
-vim.api.nvim_set_hl(0, "@markup.strong.emphasis.markdown_inline", { fg = p.fg, bold = true, italic = true })
-
--- H1
-vim.api.nvim_set_hl(0, "markdownH1", { fg = p.bright_blue, bold = true })
-vim.api.nvim_set_hl(0, "markdownH1Delimiter", { fg = p.bright_blue, bold = true })
-
--- H2
-vim.api.nvim_set_hl(0, "markdownH2", { fg = p.bright_magenta, bold = true })
-vim.api.nvim_set_hl(0, "markdownH2Delimiter", { fg = p.bright_magenta, bold = true })
-
--- H3
-vim.api.nvim_set_hl(0, "markdownH3", { fg = p.bright_cyan, bold = true })
-vim.api.nvim_set_hl(0, "markdownH3Delimiter", { fg = p.bright_cyan, bold = true })
-
--- H4
-vim.api.nvim_set_hl(0, "markdownH4", { fg = p.green, bold = true })
-vim.api.nvim_set_hl(0, "markdownH4Delimiter", { fg = p.green, bold = true })
-
--- H5
-vim.api.nvim_set_hl(0, "markdownH5", { fg = p.yellow, bold = true })
-vim.api.nvim_set_hl(0, "markdownH5Delimiter", { fg = p.yellow, bold = true })
-
--- H6
-vim.api.nvim_set_hl(0, "markdownH6", { fg = p.red, bold = true })
-vim.api.nvim_set_hl(0, "markdownH6Delimiter", { fg = p.red, bold = true })
-
-vim.api.nvim_set_hl(0, "@markup.heading.1.markdown", { fg = p.bright_blue, bold = true })
-vim.api.nvim_set_hl(0, "@markup.heading.2.markdown", { fg = p.bright_magenta, bold = true })
-vim.api.nvim_set_hl(0, "@markup.heading.3.markdown", { fg = p.bright_cyan, bold = true })
-vim.api.nvim_set_hl(0, "@markup.heading.4.markdown", { fg = p.green, bold = true })
-vim.api.nvim_set_hl(0, "@markup.heading.5.markdown", { fg = p.yellow, bold = true })
-vim.api.nvim_set_hl(0, "@markup.heading.6.markdown", { fg = p.red, bold = true })
-
-for i = 1, 6 do
-    vim.api.nvim_set_hl(0, "RenderMarkdownH" .. i .. "Bg", { bg = "NONE" })
-end
-
-vim.api.nvim_set_hl(0, "RenderMarkdownQuote", { fg = p.bright_black, italic = true })
-vim.api.nvim_set_hl(0, "RenderMarkdownCode", { fg = p.bright_green })
-vim.api.nvim_set_hl(0, "RenderMarkdownCodeBlock", { fg = p.bright_green, bg = "NONE" })
 
 vim.defer_fn(function()
     require('lualine').setup({
@@ -117,3 +68,6 @@ vim.api.nvim_create_autocmd("VimLeave", {
         io.write("\27]111\7")
     end,
 })
+
+-- oh
+--

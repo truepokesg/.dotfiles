@@ -1,1 +1,1 @@
-require("ui.theme").load("sayel-night")
+require("ui").load("sayel-night")
